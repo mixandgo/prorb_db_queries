@@ -1,24 +1,27 @@
-# README
+# Practical Ruby on Rails For Beginners - Finders
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Clone the repository on your machine using the following command.
 
-Things you may want to cover:
+```
+git clone git@github.com:mixandgo/prorb_db_queries.git
+```
 
-* Ruby version
+Then, change into the project's directory, by typing:
 
-* System dependencies
+```
+cd prorb_db_queries
+```
 
-* Configuration
+And set up the project.
 
-* Database creation
+```
+bundle install
+rails db:setup
+```
 
-* Database initialization
+You should now have everything set up to be able to run queries in the Rails console.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+rails console
+User.find(10)
+```
