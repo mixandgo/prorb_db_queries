@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr) 1fr;
+  column-gap: 2rem;
+  align-items: bottom;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  border-collapse: collapse;
+}
