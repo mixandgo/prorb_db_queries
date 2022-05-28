@@ -11,6 +11,9 @@ require "faker"
   User.create!(
     name: Faker::Name.first_name,
     email: Faker::Internet.email,
-    age: Faker::Number.within(range: 19..80)
+    age: Faker::Number.within(range: 19..80),
+    active: Faker::Boolean.boolean,
+    happy: Faker::Boolean.boolean,
+    created_at: Faker::Date.between(from: '2014-09-23', to: '2022-02-25')
   )
 end
